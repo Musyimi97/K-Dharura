@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:id="@+id/ScrollView">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/LinearLayout">
+
+
+        <android.support.v7.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp"
+                android:id="@+id/imageHolder"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintHorizontal_bias="0.422"
+                android:layout_marginTop="16dp">
+
+
+            <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/ambulance"
+                    app:layout_column="0"
+                    app:layout_row="0"
+                    android:id="@+id/ambulanceText"
+                    android:contentDescription="@string/app_name"/>
+            <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/fire"
+                    app:layout_row="0"
+                    app:layout_column="1"
+                    android:id="@+id/fireText"
+                    android:contentDescription="@string/app_name"/>
+            <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/police"
+                    app:layout_row="0"
+                    app:layout_column="2"
+                    android:id="@+id/policeText"
+                    android:contentDescription="@string/app_name"/>
+            <TextView
+                    android:text="@string/ambulance"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    app:layout_row="1"
+                    app:layout_column="0"
+                    android:id="@+id/textView4"
+                    android:contentDescription="@string/app_name"
+                    android:textSize="14sp"
+                    android:textAlignment="center"/>
+            <TextView
+                    android:text="@string/fire_incidence"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp" app:layout_row="1" app:layout_column="1"
+                    android:id="@+id/textView5" android:textAlignment="center"
+                    android:contentDescription="@string/app_name" android:textSize="14sp"/>
+            <TextView
+                    android:text="@string/report_crime"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp" app:layout_row="1" app:layout_column="2"
+                    android:id="@+id/textView6" android:textSize="14sp"
+                    android:textAlignment="center" android:contentDescription="@string/app_name"/>
+
+
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+</ScrollView>
