@@ -75,8 +75,8 @@
             <TextView
                     android:layout_marginStart="16dp"
                     android:text="@string/fire_incidence"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" app:layout_row="1" app:layout_column="1"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp" app:layout_row="1" app:layout_column="1"
                     android:id="@+id/textView2" android:contentDescription="@string/app_name"
                     android:textAlignment="center" android:textSize="14sp" android:textColor="@color/colorPrimary"
                     android:background="@android:color/white"/>
