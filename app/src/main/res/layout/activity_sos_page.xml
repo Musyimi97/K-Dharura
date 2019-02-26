@@ -10,59 +10,78 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" android:id="@+id/linearLayout" android:gravity="center"
-            android:background="@android:color/darker_gray">
+            android:orientation="vertical" android:id="@+id/linearLayout" android:gravity="center">
 
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="300dp" app:srcCompat="@drawable/tow1" android:id="@+id/tow1"
                 android:contentDescription="@string/app_name"/>
-        <android.support.v7.widget.GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/gridLayout" app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="48dp"
-                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.487"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp" android:background="@color/colorAccent"/>
+
+        <TextView
+                android:text="@string/central_motors_limited_contacts_254_720_441250_735_204887_772_784798_area_nairobi_and_environs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tow1textView" android:textAlignment="center"
+                android:contentDescription="@string/app_name" android:textColor="@color/colorPrimary"/>
+        <Button
+                android:text="@string/visit_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tow1Button"
+                android:contentDescription="@string/app_name" android:onClick="tow1Button"/>
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="300dp" app:srcCompat="@drawable/tow2" android:id="@+id/tow2"
                 android:contentDescription="@string/app_name"/>
+
         <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="400dp" app:srcCompat="@drawable/tow3" android:id="@+id/tow3"
+                android:layout_height="300dp" app:srcCompat="@drawable/tow3" android:id="@+id/tow3"
                 android:contentDescription="@string/app_name"/>
         <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="600dp" app:srcCompat="@drawable/tow4" android:id="@+id/tow4"
+                android:layout_height="300dp" app:srcCompat="@drawable/tow4" android:id="@+id/tow4"
                 android:contentDescription="@string/app_name"/>
         <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="300dp" app:srcCompat="@drawable/tow5" android:id="@+id/tow5"
                 android:contentDescription="@string/app_name"/>
         <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="600dp" app:srcCompat="@drawable/tow6" android:id="@+id/tow6"
+                android:layout_height="300dp" app:srcCompat="@drawable/breakdown1" android:id="@+id/breakdown1"
                 android:contentDescription="@string/app_name"/>
         <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="400dp" app:srcCompat="@drawable/tow7" android:id="@+id/tow7"
+                android:layout_height="300dp" app:srcCompat="@drawable/breakdown2" android:id="@+id/breakdown2"
                 android:contentDescription="@string/app_name"/>
         <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="300dp" app:srcCompat="@drawable/tow8" android:id="@+id/tow8"
+                android:layout_height="300dp" app:srcCompat="@drawable/breakdown3" android:id="@+id/breakdown3"
                 android:contentDescription="@string/app_name"/>
         <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="300dp" app:srcCompat="@drawable/tow9" android:id="@+id/tow9"
+                android:layout_height="300dp" app:srcCompat="@drawable/breakdown4" android:id="@+id/breakdown4"
                 android:contentDescription="@string/app_name"/>
         <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="300dp" app:srcCompat="@drawable/tow10" android:id="@+id/tow10"
+                android:layout_height="300dp" app:srcCompat="@drawable/breakdown5" android:id="@+id/breakdown5"
                 android:contentDescription="@string/app_name"/>
-
-
+        <ImageView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" app:srcCompat="@drawable/breakdown6" android:id="@+id/breakdown6"
+                android:contentDescription="@string/app_name"/>
+        <ImageView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" app:srcCompat="@drawable/breakdown7" android:id="@+id/breakdown7"
+                android:contentDescription="@string/app_name"/>
     </LinearLayout>
 
 
