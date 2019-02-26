@@ -1,6 +1,7 @@
 package com.theprotocode.k_dharura
 
 import android.content.Intent
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -22,9 +23,20 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    fun EmergencyNumber(view: View){
+        val intent = Intent(Intent.ACTION_DIAL)
+        intent.data = Uri.parse("tel:999")
+        startActivity(intent)
+    }
+
 
 
 
 
 
 }
+
+
+
+
+

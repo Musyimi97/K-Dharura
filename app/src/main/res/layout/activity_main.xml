@@ -45,14 +45,14 @@
                     android:layout_height="100dp"
                     app:srcCompat="@drawable/ambulance"
                     android:id="@+id/ambulanceText"
-                    android:contentDescription="@string/app_name"/>
+                    android:contentDescription="@string/app_name" android:onClick="EmergencyNumber"/>
             <ImageView
                     android:layout_marginStart="16dp"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:srcCompat="@drawable/fire"
                     android:id="@+id/fireText"
-                    android:contentDescription="@string/app_name"/>
+                    android:contentDescription="@string/app_name" android:onClick="EmergencyNumber"/>
             <ImageView
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
@@ -63,7 +63,7 @@
                     android:layout_toEndOf="@+id/fireText"
                     android:contentDescription="@string/app_name"
                     app:layout_column="2"
-                    app:layout_row="0"/>
+                    app:layout_row="0" android:onClick="EmergencyNumber"/>
             <TextView
                     android:layout_marginStart="16dp"
                     android:layout_width="100dp"
@@ -125,7 +125,7 @@
                     app:layout_row="0"
                     app:layout_column="0"
                     android:id="@+id/accident"
-                    android:contentDescription="@string/app_name"/>
+                    android:contentDescription="@string/app_name" android:onClick="EmergencyNumber"/>
             <TextView
                     android:layout_marginStart="16dp"
                     android:text="@string/accident"

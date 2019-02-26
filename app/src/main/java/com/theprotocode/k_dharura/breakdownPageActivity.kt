@@ -13,10 +13,12 @@ class breakdownPageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sos_page)
 
     }
-    fun tow1Button(view: View){
-        val openURL=Intent(android.content.Intent.ACTION_VIEW)
+
+    fun tow1Button(view: View) {
+        val openURL = Intent(android.content.Intent.ACTION_VIEW)
         openURL.data = Uri.parse("http://cmskenya.co.ke/services/recovery-roadside-assistance/")
         startActivity(openURL)
+
     }
 
 }
