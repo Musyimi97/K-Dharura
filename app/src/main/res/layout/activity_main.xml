@@ -183,7 +183,7 @@
                     android:layout_height="100dp"
                     app:srcCompat="@drawable/camera"
                     android:id="@+id/photoApp" android:contentDescription="@string/app_name"
-                    android:background="@android:color/white"/>
+                    android:background="@android:color/white" android:onClick="dispatchTakePictureIntent"/>
             <TextView
                     android:layout_marginStart="16dp"
                     app:layout_column="0"
