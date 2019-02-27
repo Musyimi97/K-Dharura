@@ -3,7 +3,6 @@
           xmlns:dist="http://schemas.android.com/apk/distribution"
           package="com.theprotocode.k_dharura">
 
-
     <dist:module dist:instant="true"/>
 
     <application
@@ -13,7 +12,19 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".WebviewActivity">
+        </activity>
         <activity android:name=".breakdownPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:host="www.blinkstudio.co.ke"
+                        android:scheme="http"/>
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -15,8 +15,7 @@
     <string name="accident">ACCIDENT</string>
     <string name="breakdown">BREAKDOWN</string>
     <string name="panic">PANIC</string>
-    <string name="welcome_to_k_dharura_your_wellness_and_safety_partner_please_report_your_emergency_below">Welcome to
-        K-Dharura your wellness and safety partner. Please report your emergency below.
+    <string name="welcome_to_k_dharura_your_wellness_and_safety_partner_please_report_your_emergency_below">Welcome user.
     </string>
     <string name="account">ACCOUNT</string>
     <string name="identity_card">IDENTITY CARD</string>
