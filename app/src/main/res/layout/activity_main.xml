@@ -135,15 +135,21 @@
                            android:src="@drawable/i_login"
 
                            android:id="@+id/healthID" android:contentDescription="@string/app_name"/>
+                <RelativeLayout
 
-                <Button
-                        android:background="@android:color/holo_blue_bright"
-                        android:textColor="@android:color/white"
-                        android:layout_marginStart="100dp"
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/edit_health_id"
-                        android:id="@+id/editHealthId"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <Button
+                            android:background="@android:color/holo_blue_bright"
+                            android:textColor="@android:color/white"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginEnd="100dp"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/edit_health_id"
+                            android:id="@+id/editHealthId" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+                </RelativeLayout>
 
             </LinearLayout>
 
@@ -292,7 +298,7 @@
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
                                       android:text="@string/police_siren"
-                                      android:id="@+id/po;iceSirenText" android:contentDescription="@string/app_name"
+                                      android:id="@+id/policeSirenText" android:contentDescription="@string/app_name"
                                       android:textAlignment="center"/>
                         </LinearLayout>
 
@@ -316,7 +322,7 @@
                                     android:layout_marginTop="5dp"
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
-                                    android:layout_height="90dp" android:scaleType="centerInside"
+                                    android:layout_height="94dp" android:scaleType="centerInside"
                                     android:id="@+id/firstAidTips" android:contentDescription="@string/app_name"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
