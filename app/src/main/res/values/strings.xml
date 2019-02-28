@@ -30,4 +30,9 @@
     <string name="welcome_user">Welcome, User</string>
     <string name="location">Location</string>
     <string name="edit_health_id">Edit Health ID</string>
+    <string name="accident1">Accident</string>
+    <string name="breakdown1">Breakdown</string>
+    <string name="photo_mail">Photo Mail</string>
+    <string name="police_siren">Police Siren</string>
+    <string name="first_aid_tips">First Aid Tips</string>
 </resources>

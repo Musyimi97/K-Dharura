@@ -191,7 +191,7 @@
                                     android:onClick="EmergencyNumber"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="Accident"
+                                      android:text="@string/accident1"
                                       android:id="@+id/accidentText" android:contentDescription="@string/app_name"
                                       android:textAlignment="center"/>
                         </LinearLayout>
@@ -220,7 +220,7 @@
                                     android:src="@drawable/i_tow2"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="Breakdown"
+                                      android:text="@string/breakdown1"
                                       android:id="@+id/carTowText" android:contentDescription="@string/app_name"
                                       android:textAlignment="center"/>
                         </LinearLayout>
@@ -250,7 +250,7 @@
                                     android:src="@drawable/i_camera" android:onClick="dispatchTakePictureIntent"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="Photo Mail"
+                                      android:text="@string/photo_mail"
                                       android:textAlignment="center" android:id="@+id/phototMailText"
                                       android:contentDescription="@string/app_name"/>
                         </LinearLayout>
@@ -283,16 +283,16 @@
                                       android:orientation="vertical"
                         >
                             <ImageButton
-                                    android:src="@drawable/i_ambulance"
                                     android:layout_marginTop="5dp"
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/ambulance2" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/policeSiren" android:contentDescription="@string/app_name"
+                                    android:src="@drawable/i_siren"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="@string/Ambulance"
-                                      android:id="@+id/ammbulanceText2" android:contentDescription="@string/app_name"
+                                      android:text="@string/police_siren"
+                                      android:id="@+id/po;iceSirenText" android:contentDescription="@string/app_name"
                                       android:textAlignment="center"/>
                         </LinearLayout>
 
@@ -312,15 +312,15 @@
                                       android:orientation="vertical"
                         >
                             <ImageButton
-                                    android:src="@drawable/i_police"
+                                    android:src="@drawable/i_health2"
                                     android:layout_marginTop="5dp"
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/police2" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/firstAidTips" android:contentDescription="@string/app_name"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="@string/police"
+                                      android:text="@string/first_aid_tips"
                                       android:id="@+id/policeText2" android:contentDescription="@string/app_name"
                                       android:textAlignment="center"/>
                         </LinearLayout>
