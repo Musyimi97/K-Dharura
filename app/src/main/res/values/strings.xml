@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">K-Dharura</string>
     <string name="report_crime">Report Crime</string>
-    <string name="ambulance">Ambulance</string>
+    <string name="Ambulance">AMBULANCE</string>
     <string name="fire_incidence">Fire Incidence</string>
     <string name="fire_incidence1">Fire Incidence</string>
     <string name="report_crime1">Report Crime</string>
@@ -10,13 +10,12 @@
     <string name="advanced_options">Advanced Options</string>
     <string name="photo_app">PHOTO APP</string>
     <string name="string_app_name">\@string/app_name</string>
-    <string name="whistle">WHISTLE</string>
+    <string name="whistle">AROUND ME</string>
     <string name="siren">SIREN</string>
     <string name="accident">ACCIDENT</string>
     <string name="breakdown">BREAKDOWN</string>
     <string name="panic">PANIC</string>
-    <string name="welcome_to_k_dharura_your_wellness_and_safety_partner_please_report_your_emergency_below">Welcome to
-        K-Dharura your wellness and safety partner. Please report your emergency below.
+    <string name="welcome_to_k_dharura_your_wellness_and_safety_partner_please_report_your_emergency_below">Welcome user.
     </string>
     <string name="account">ACCOUNT</string>
     <string name="identity_card">IDENTITY CARD</string>
@@ -25,4 +24,9 @@
         Central Motors Limited. CONTACTS: +254 720 441250 / 735 204887 / 772 784798. Area:Nairobi and Environs
     </string>
     <string name="visit_website">Visit Website</string>
+
+    <string name="police">POLICE</string>
+    <string name="fire">FIRE</string>
+    <string name="welcome_user">Welcome, User</string>
+    <string name="location">Location</string>
 </resources>

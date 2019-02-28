@@ -3,319 +3,362 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-
+        android:background="@color/background"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity" android:id="@+id/ScrollView">
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" android:id="@+id/linearLayout" android:gravity="center"
-            android:background="@android:color/darker_gray">
-        <TextView
-                android:text="@string/welcome_to_k_dharura_your_wellness_and_safety_partner_please_report_your_emergency_below"
-                android:textColor="@color/colorPrimary"
-                android:layout_width="match_parent"
-                android:layout_marginTop="16dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView8" android:textAlignment="textStart" android:textSize="18sp"
-        />
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:id="@+id/textView7"
-                android:text="@string/what_kind_of_emergency"
-                android:contentDescription="@string/app_name"
-                android:textAlignment="textStart"
-                android:textSize="18sp" android:textColor="@color/colorPrimary"/>
-        <android.support.v7.widget.GridLayout
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <!--Start of New Group-->
+        <HorizontalScrollView
+                android:scrollbars="none"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/gridLayout" app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="48dp"
-                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.487"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp" android:background="@color/colorAccent">
-
-            <ImageView
-                    android:layout_marginStart="16dp"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/ambulance"
-                    android:id="@+id/ambulanceText"
-                    android:contentDescription="@string/app_name" android:onClick="EmergencyNumber"/>
-            <ImageView
-                    android:layout_marginStart="16dp"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/fire"
-                    android:id="@+id/fireText"
-                    android:contentDescription="@string/app_name" android:onClick="EmergencyNumber"/>
-            <ImageView
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/police"
-                    android:id="@+id/policeText"
-                    android:layout_toEndOf="@+id/fireText"
-                    android:contentDescription="@string/app_name"
-                    app:layout_column="2"
-                    app:layout_row="0" android:onClick="EmergencyNumber"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp" app:layout_row="1" app:layout_column="0"
-                    android:id="@+id/textView1" android:contentDescription="@string/app_name"
-                    android:textAlignment="center" android:text="@string/ambulance"
-                    android:textSize="14sp" android:textColor="@color/colorPrimary"
-                    android:background="@android:color/white"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    android:text="@string/fire_incidence"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" app:layout_row="1" app:layout_column="1"
-                    android:id="@+id/textView2" android:contentDescription="@string/app_name"
-                    android:textAlignment="center" android:textSize="14sp" android:textColor="@color/colorPrimary"
-                    android:background="@android:color/white"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    android:text="@string/report_crime"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    app:layout_row="1"
-                    app:layout_column="2"
-                    android:id="@+id/textView3"
-                    android:textSize="14sp"
-                    android:textAlignment="center"
-                    android:contentDescription="@string/app_name" android:textColor="@color/colorPrimary"
-                    android:background="@android:color/white"/>
-
-            <!--advanced option text-->
-
-        </android.support.v7.widget.GridLayout>
+                    android:layout_height="wrap_content">
 
 
+                <android.support.v7.widget.CardView
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                >
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                    >
+                        <ImageButton
+                                android:src="@drawable/i_ambulance"
+                                android:layout_marginTop="5dp"
+                                android:background="@android:color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp" android:scaleType="centerInside"
+                                android:id="@+id/ambulance" android:contentDescription="@string/app_name"/>
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/Ambulance"
+                                  android:id="@+id/ammbulanceText" android:contentDescription="@string/app_name"
+                                  android:textAlignment="center"/>
+                    </LinearLayout>
 
-        <TextView
-                android:layout_marginBottom="16dp"
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                >
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                    >
+                        <ImageButton
+                                android:src="@drawable/i_police"
+                                android:layout_marginTop="5dp"
+                                android:background="@android:color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp" android:scaleType="centerInside"
+                                android:id="@+id/police" android:contentDescription="@string/app_name"/>
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/police"
+                                  android:id="@+id/policeText" android:contentDescription="@string/app_name"
+                                  android:textAlignment="center"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                >
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                    >
+
+                        <ImageButton
+                                android:src="@drawable/fire2"
+                                android:layout_marginTop="5dp"
+                                android:background="@android:color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp" android:scaleType="centerInside"
+                                android:id="@+id/fire" android:contentDescription="@string/app_name"/>
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/fire"
+                                  android:textAlignment="center"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <!--Second Section-->
+
+        <android.support.v7.widget.CardView
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginTop="16dp"
-                android:text="@string/advanced_options"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView9"
-                android:contentDescription="@string/app_name"
-                android:textColor="@color/colorPrimary"
-                android:textAlignment="center"
-                android:baselineAligned="false"/>
+                android:layout_height="150dp">
 
-        <!--This is the second GridLayout holding the advanced option activities-->
-        <android.support.v7.widget.GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="326dp"
-                android:id="@+id/gridLayout2" android:background="@color/colorAccent">
-            <ImageView
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/accident"
-                    app:layout_row="0"
-                    app:layout_column="0"
-                    android:id="@+id/accident"
-                    android:contentDescription="@string/app_name" android:onClick="EmergencyNumber"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    android:text="@string/accident"
-                    app:layout_row="1"
-                    app:layout_column="0"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/textView10" android:contentDescription="@string/app_name"
-                    android:textAlignment="center" android:textSize="14sp" android:textColor="@color/colorPrimary"
-                    android:background="@android:color/white"/>
-            <ImageView
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    app:srcCompat="@drawable/breakdown" app:layout_row="0"
-                    app:layout_column="1" android:id="@+id/carBreakdown" android:contentDescription="@string/app_name"
-                    android:onClick="breakdownPageActivity"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    android:text="@string/breakdown"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp" app:layout_row="1" app:layout_column="1"
-                    android:id="@+id/textView11" android:contentDescription="@string/app_name"
-                    android:textColor="@color/colorPrimary" android:textAlignment="center"
-                    android:background="@android:color/white"/>
-            <ImageView
-                    android:layout_marginTop="16dp"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="8dp"
-                    app:srcCompat="@drawable/sos" app:layout_row="0"
-                    app:layout_column="2" android:id="@+id/panic" android:contentDescription="@string/app_name"
-                    android:background="@android:color/white"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    android:text="@string/panic"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    app:layout_row="1"
-                    app:layout_column="2"
-                    android:id="@+id/textView12"
-                    android:contentDescription="@string/app_name"
-                    android:textColor="@color/colorPrimary"
-                    android:textAlignment="center" android:background="@android:color/white"/>
-            <ImageView
-                    android:layout_marginStart="16sp"
-                    android:layout_marginTop="64dp"
-                    app:layout_column="0"
-                    app:layout_row="1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/camera"
-                    android:id="@+id/photoApp" android:contentDescription="@string/app_name"
-                    android:background="@android:color/white"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    app:layout_column="0"
-                    app:layout_row="2"
-                    android:text="@string/photo_app"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/textView13" android:contentDescription="@string/string_app_name"
-                    android:textAlignment="center" android:textColor="@color/colorPrimary"
-                    android:background="@android:color/white"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="170dp"
+                          android:orientation="vertical">
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="106dp"
+                           android:src="@drawable/i_login"
 
-            <ImageView
-                    android:layout_marginStart="16sp"
-                    android:layout_marginTop="64dp"
-                    app:layout_column="1"
-                    app:layout_row="1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/whistle"
-                    android:id="@+id/whistle"
-                    android:contentDescription="@string/app_name" android:background="@android:color/white"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    app:layout_column="1"
-                    app:layout_row="2"
-                    android:text="@string/whistle"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/textView14" android:background="@android:color/white"
-                    android:contentDescription="@string/app_name" android:textAlignment="center"
-                    android:textColor="@color/colorPrimary"/>
+                />
+
+                <Button
+                        android:background="@android:color/holo_blue_bright"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="100dp"
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Health ID"
+                />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
 
 
-            <ImageView
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginStart="16sp"
-                    android:layout_marginTop="64dp"
-                    app:layout_column="2"
-                    app:layout_row="1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/siren"
-                    android:id="@+id/wailingSiren" android:background="@android:color/white"
-                    android:contentDescription="@string/app_name"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    app:layout_column="2"
-                    app:layout_row="2"
-                    android:text="@string/siren"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/textView15" android:contentDescription="@string/app_name"
-                    android:textColor="@color/colorPrimary" android:textAlignment="center"
-                    android:background="@android:color/white"/>
+        <!--Third Section-->
+        <android.support.v7.widget.CardView
 
-        </android.support.v7.widget.GridLayout>
+                android:layout_marginTop="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
 
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <!--First Row-->
+
+                <LinearLayout
+                        android:layout_marginTop="32dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
 
-        <!--GridLayout 3-->
+                    <android.support.v7.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="8dp"
+                    >
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:orientation="vertical"
+                        >
+                            <ImageButton
+                                    android:src="@drawable/i_ambulance"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp" android:scaleType="centerInside"
+                                    android:id="@+id/ambulance1" android:contentDescription="@string/app_name"/>
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/Ambulance"
+                                      android:id="@+id/ammbulanceText1" android:contentDescription="@string/app_name"
+                                      android:textAlignment="center"/>
+                        </LinearLayout>
 
-        <android.support.v7.widget.GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/gridLayout3"
-                android:background="@color/colorAccent">
+                    </android.support.v7.widget.CardView>
 
-            <ImageView
-                    android:layout_marginStart="16dp"
-                    app:layout_column="0"
-                    app:layout_row="0"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/identity_card"
-                    android:id="@+id/identityCard" android:contentDescription="@string/app_name"
-                    android:background="@android:color/white"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    app:layout_column="0"
-                    app:layout_row="1"
-                    android:text="@string/identity_card"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/textView16" android:contentDescription="@string/app_name"
-                    android:background="@android:color/white" android:textColor="@color/colorPrimary"/>
-            <ImageView
-                    android:layout_marginStart="16dp"
-                    app:layout_column="1"
-                    app:layout_row="0"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/account"
-                    android:contentDescription="@string/app_name"
-                    android:background="@android:color/white" android:id="@+id/account"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    app:layout_column="1"
-                    app:layout_row="1"
-                    android:text="@string/account"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/textView17" android:contentDescription="@string/app_name"
-                    android:background="@android:color/white"
-                    android:textColor="@color/colorPrimary"/>
-            <ImageView
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginStart="16dp"
-                    app:layout_column="2"
-                    app:layout_row="0"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/settings"
-                    android:contentDescription="@string/app_name"
-                    android:background="@android:color/white" android:id="@+id/settings"/>
-            <TextView
-                    android:layout_marginStart="16dp"
-                    app:layout_column="2"
-                    app:layout_row="1"
-                    android:text="@string/settings"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/textView18" android:contentDescription="@string/app_name"
-                    android:background="@android:color/white"
-                    android:textColor="@color/colorPrimary"/>
+                    <android.support.v7.widget.CardView
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                    >
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:orientation="vertical"
+                        >
+                            <ImageButton
+                                    android:src="@drawable/i_police"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp" android:scaleType="centerInside"
+                                    android:id="@+id/police1" android:contentDescription="@string/app_name"/>
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/police"
+                                      android:id="@+id/policeText1" android:contentDescription="@string/app_name"
+                                      android:textAlignment="center"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="16dp"
+                    >
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:orientation="vertical"
+                        >
+
+                            <ImageButton
+                                    android:src="@drawable/fire2"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp" android:scaleType="centerInside"
+                                    android:id="@+id/fire1" android:contentDescription="@string/app_name"/>
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/fire"
+                                      android:textAlignment="center"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <!--Second Row-->
+
+                <LinearLayout
+                        android:layout_marginTop="32dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
 
+                    <android.support.v7.widget.CardView
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="8dp"
 
-        </android.support.v7.widget.GridLayout>
+                    >
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:orientation="vertical"
+                        >
+                            <ImageButton
+                                    android:src="@drawable/i_ambulance"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp" android:scaleType="centerInside"
+                                    android:id="@+id/ambulance2" android:contentDescription="@string/app_name"/>
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/Ambulance"
+                                      android:id="@+id/ammbulanceText2" android:contentDescription="@string/app_name"
+                                      android:textAlignment="center"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                    >
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:orientation="vertical"
+                        >
+                            <ImageButton
+                                    android:src="@drawable/i_police"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp" android:scaleType="centerInside"
+                                    android:id="@+id/police2" android:contentDescription="@string/app_name"/>
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/police"
+                                      android:id="@+id/policeText2" android:contentDescription="@string/app_name"
+                                      android:textAlignment="center"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:orientation="vertical"
+                        >
+
+                            <ImageButton
+                                    android:src="@drawable/fire2"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp" android:scaleType="centerInside"
+                                    android:id="@+id/fire2" android:contentDescription="@string/app_name"/>
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/fire"
+                                      android:textAlignment="center"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
     </LinearLayout>
-
 
 </ScrollView>
 
