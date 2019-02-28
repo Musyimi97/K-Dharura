@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">K-Dharura</string>
     <string name="report_crime">Report Crime</string>
-    <string name="ambulance">Ambulance</string>
+    <string name="Ambulance">AMBULANCE</string>
     <string name="fire_incidence">Fire Incidence</string>
     <string name="fire_incidence1">Fire Incidence</string>
     <string name="report_crime1">Report Crime</string>
@@ -24,4 +24,9 @@
         Central Motors Limited. CONTACTS: +254 720 441250 / 735 204887 / 772 784798. Area:Nairobi and Environs
     </string>
     <string name="visit_website">Visit Website</string>
+
+    <string name="police">POLICE</string>
+    <string name="fire">FIRE</string>
+    <string name="welcome_user">Welcome, User</string>
+    <string name="location">Location</string>
 </resources>
