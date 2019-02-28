@@ -18,35 +18,35 @@ class MainActivity : AppCompatActivity() {
 // and set onClickListener and intents to listen to onClicks
 
 
-    fun breakdownPageActivity(view: View){
-        val intent=Intent(this,breakdownPageActivity::class.java)
-        startActivity(intent)
-    }
-
-//This intent opens phone keypad automatically
-
-    fun EmergencyNumber(view: View){
-        val intent = Intent(Intent.ACTION_DIAL)
-        intent.data = Uri.parse("tel:999")
-        startActivity(intent)
-    }
-
-
-//This code opens camera automatically and sends it to email automatically.
-    val REQUEST_IMAGE_CAPTURE = 1
-
-    fun dispatchTakePictureIntent(view: View) {
+//    fun breakdownPageActivity(view: View){
+//        val intent=Intent(this,breakdownPageActivity::class.java)
+//        startActivity(intent)
+//    }
+//
+////This intent opens phone keypad automatically
+//
+//    fun EmergencyNumber(view: View){
+//        val intent = Intent(Intent.ACTION_DIAL)
+//        intent.data = Uri.parse("tel:999")
+//        startActivity(intent)
+//    }
 
 
-
-
-        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
-            takePictureIntent.resolveActivity(packageManager)?.also {
-                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
-
-            }
-        }
-    }
+////This code opens camera automatically and sends it to email automatically.
+//    val REQUEST_IMAGE_CAPTURE = 1
+//
+//    fun dispatchTakePictureIntent(view: View) {
+//
+//
+//
+//
+//        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
+//            takePictureIntent.resolveActivity(packageManager)?.also {
+//                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
+//
+//            }
+//        }
+//    }
 
 
 
