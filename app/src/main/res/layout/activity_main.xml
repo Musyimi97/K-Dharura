@@ -140,7 +140,7 @@
                         android:layout_width="182dp"
                         android:layout_height="wrap_content"
                         android:text="Edit Health ID"
-                />
+                        android:id="@+id/details"/>
 
             </LinearLayout>
 
