@@ -121,4 +121,11 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="edit_health_id">Edit Health ID</string>
+    <string name="road_accident">Road Accident</string>
+    <string name="string_car_breakdown">Car Breakdown</string>
+    <string name="photo_mail">Photo Mail</string>
+    <string name="first_aid_kit">First Aid Kit</string>
+    <string name="location">Location</string>
+    <string name="police_siren">Police Siren</string>
 </resources>
