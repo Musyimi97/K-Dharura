@@ -40,7 +40,8 @@
                                 android:background="@android:color/white"
                                 android:layout_width="match_parent"
                                 android:layout_height="90dp" android:scaleType="centerInside"
-                                android:id="@+id/ambulance" android:contentDescription="@string/app_name"/>
+                                android:id="@+id/ambulance" android:contentDescription="@string/app_name"
+                                android:onClick="callNumber"/>
                         <TextView android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
                                   android:text="@string/Ambulance"
@@ -69,7 +70,8 @@
                                 android:background="@android:color/white"
                                 android:layout_width="match_parent"
                                 android:layout_height="90dp" android:scaleType="centerInside"
-                                android:id="@+id/police" android:contentDescription="@string/app_name"/>
+                                android:id="@+id/police" android:contentDescription="@string/app_name"
+                                android:onClick="callNumber"/>
                         <TextView android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
                                   android:text="@string/police"
@@ -99,7 +101,8 @@
                                 android:background="@android:color/white"
                                 android:layout_width="match_parent"
                                 android:layout_height="90dp" android:scaleType="centerInside"
-                                android:id="@+id/fire" android:contentDescription="@string/app_name"/>
+                                android:id="@+id/fire" android:contentDescription="@string/app_name"
+                                android:onClick="callNumber"/>
                         <TextView android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
                                   android:text="@string/fire"
@@ -189,7 +192,8 @@
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/carAccident" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/carAccident" android:contentDescription="@string/app_name"
+                                    android:onClick="callNumber"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
                                       android:text="@string/road_accident"

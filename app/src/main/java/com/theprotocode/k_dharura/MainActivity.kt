@@ -6,6 +6,8 @@ import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.support.v4.content.ContextCompat
+import android.support.v4.content.ContextCompat.startActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,6 +26,18 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+
+    //This intent opens phone keypad automatically
+
+    fun callNumber(view: View){
+        val intent = Intent(Intent.ACTION_CALL)
+        intent.data = Uri.parse("tel:999")
+        startActivity(intent)
+    }
+
+
+
 }
 
 
@@ -35,15 +49,8 @@ class MainActivity : AppCompatActivity() {
 //        val intent=Intent(this,breakdownPageActivity::class.java)
 //        startActivity(intent)
 //    }
-//
-////This intent opens phone keypad automatically
-//
-//    fun EmergencyNumber(view: View){
-//        val intent = Intent(Intent.ACTION_DIAL)
-//        intent.data = Uri.parse("tel:999")
-//        startActivity(intent)
-//    }
-var dummy = 123
+
+
 
 ////This code opens camera automatically and sends it to email automatically.
 //    val REQUEST_IMAGE_CAPTURE = 1
