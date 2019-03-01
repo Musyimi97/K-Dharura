@@ -7,13 +7,26 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
+
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        details.setOnClickListener {
+            val intent = Intent(this, ScrollingActivity::class.java)
+            // start your next activity
+            startActivity(intent)
+        }
+
     }
+}
+
+
 //    Am now going to get reference to all my image views in my homepage
 // and set onClickListener and intents to listen to onClicks
 
@@ -30,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 //        intent.data = Uri.parse("tel:999")
 //        startActivity(intent)
 //    }
-
+var dummy = 123
 
 ////This code opens camera automatically and sends it to email automatically.
 //    val REQUEST_IMAGE_CAPTURE = 1
@@ -50,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-}
+
 
 
 
