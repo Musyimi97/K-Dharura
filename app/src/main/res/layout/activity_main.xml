@@ -252,7 +252,8 @@
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/photoMail" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/photoMail" android:contentDescription="@string/app_name"
+                                    android:onClick="takePicture"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
                                       android:text="@string/photo_mail"
