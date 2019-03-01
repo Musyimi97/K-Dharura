@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 //        intent.data = Uri.parse("tel:999")
 //        startActivity(intent)
 //    }
-
+var dummy = 123
 
 ////This code opens camera automatically and sends it to email automatically.
 //    val REQUEST_IMAGE_CAPTURE = 1
