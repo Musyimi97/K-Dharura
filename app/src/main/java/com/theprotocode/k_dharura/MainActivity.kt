@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        details.setOnClickListener {
+        firstAidKit.setOnClickListener {
             val intent = Intent(this, ScrollingActivity::class.java)
             // start your next activity
             startActivity(intent)
