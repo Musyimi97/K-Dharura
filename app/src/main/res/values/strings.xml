@@ -29,7 +29,6 @@
     <string name="police">POLICE</string>
     <string name="fire">FIRE</string>
     <string name="welcome_user">Welcome, User</string>
-    <string name="location">Location</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -126,6 +125,6 @@
     <string name="string_car_breakdown">Car Breakdown</string>
     <string name="photo_mail">Photo Mail</string>
     <string name="first_aid_kit">First Aid Kit</string>
-    <string name="location">Location</string>
     <string name="police_siren">Police Siren</string>
+    <string name="location">Location</string>
 </resources>
