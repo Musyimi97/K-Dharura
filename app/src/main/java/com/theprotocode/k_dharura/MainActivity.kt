@@ -15,6 +15,10 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 import android.graphics.drawable.ColorDrawable
+import android.os.Handler
+import android.support.v4.os.HandlerCompat.postDelayed
+
+
 
 
 
@@ -27,12 +31,14 @@ class MainActivity : AppCompatActivity() {
 
 
 //        Location onclick listener
-        location.setOnClickListener {
-            val intent=Intent(this,MainActivity::class.java)
-            startActivity(intent )
-        }
-
-
+        location.setOnClickListener(View.OnClickListener {
+            Handler().postDelayed(Runnable {
+                val gmmIntentUri = Uri.parse("geo:0,0?q= "+"Hospital")
+                val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+                mapIntent.setPackage("com.google.android.apps.maps")
+                startActivity(mapIntent)
+            }, 600)
+        })
 
 
 
