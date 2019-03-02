@@ -127,4 +127,16 @@
     <string name="first_aid_kit">First Aid Kit</string>
     <string name="police_siren">Police Siren</string>
     <string name="location">Location</string>
+    <string name="hospital">Hospital</string>
+    <string name="police_stations">Police Stations</string>
+    <string name="car_garage">Car Garage</string>
+    <string name="click_the_button_below_to_display_hospitals_around_you">Click the button below to display hospitals
+        around you
+    </string>
+    <string name="click_the_button_below_to_view_available_police_stations_in_your_location">Click the button below to
+        view available police stations in your location
+    </string>
+    <string name="click_the_button_below_to_view_car_garages_around_your_location">Click the button below to view Car
+        Garages around your location
+    </string>
 </resources>
