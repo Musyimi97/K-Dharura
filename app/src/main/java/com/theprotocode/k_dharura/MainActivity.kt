@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
+//This opens the first aid tips page.
         firstAidTips.setOnClickListener {
             val intent = Intent(this, ScrollingActivity::class.java)
             // start your next activity
@@ -52,9 +52,28 @@ class MainActivity : AppCompatActivity() {
 
         police.setOnClickListener{
             val intent = Intent(Intent.ACTION_DIAL)
-            intent.data = Uri.parse("tel:999")
+            intent.data = Uri.parse("tel:+254703248870")
             startActivity(intent)
          }
+
+
+//Opens the phone when ambulance is clicked.
+        ambulance.setOnClickListener {
+            val laban = Intent(Intent.ACTION_DIAL)
+            laban.data = Uri.parse("tel:+254703248870")
+            startActivity(laban)
+        }
+
+        //Opens phone when fire is clicked.
+
+        fire.setOnClickListener {
+            val laban = Intent(Intent.ACTION_DIAL)
+            laban.data = Uri.parse("tel:+254703248870")
+            startActivity(laban)
+        }
+
+
+
 
         fun callNumber(view: View){
             val intent =Intent(Intent.ACTION_SCREEN_OFF)
