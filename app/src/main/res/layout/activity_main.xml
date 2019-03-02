@@ -254,7 +254,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
                                     android:id="@+id/photoMail" android:contentDescription="@string/app_name"
-                                    android:src="@drawable/i_camera"/>
+                                    android:src="@drawable/i_camera" tools:ignore="OnClick"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
                                       android:text="@string/photo_mail"

@@ -29,12 +29,22 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        class pol(view: View){
+        class Pol(view: View){
             fun call(view: View) {
                 val intent = Intent(Intent.ACTION_DIAL)
                 intent.data = Uri.parse("tel:999")
                 startActivity(intent)
             }
+
+        }
+
+
+
+        //This code opens the edit health id page.
+        editHealthId.setOnClickListener {
+            val intent = Intent(this, Edit_Health::class.java)
+            // start your next activity
+            startActivity(intent)
 
         }
 
@@ -75,11 +85,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        fun callNumber(view: View){
-            val intent =Intent(Intent.ACTION_SCREEN_OFF)
-            startActivity(intent)
-        }
-
         fun call(view: View) {
             val intent = Intent(Intent.ACTION_DIAL)
             intent.data = Uri.parse("tel:999")
@@ -87,16 +92,17 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        ////This code opens camera automatically and sends it to email automatically.
-        val REQUEST_IMAGE_CAPTURE = 1
-        fun dispatchTakePictureIntent(view: View) {
-            Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
-                takePictureIntent.resolveActivity(packageManager)?.also {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
+    ////This code opens camera automatically and sends it to email automatically.
+    val rEQUEST_IMAGE_CAPTURE = 1
+    fun dispatchTakePictureIntent(view: View) {
+        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
+            takePictureIntent.resolveActivity(packageManager)?.also {
+                startActivityForResult(takePictureIntent, rEQUEST_IMAGE_CAPTURE)
 
-                }
             }
         }
+    }
+
 
 
     }
