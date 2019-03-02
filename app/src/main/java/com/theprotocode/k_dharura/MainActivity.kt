@@ -14,6 +14,9 @@ import android.support.v4.content.FileProvider
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
+import android.graphics.drawable.ColorDrawable
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,15 +25,31 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        first aid kit image button onclick
 
-        firstAidKit.setOnClickListener {
+//        Location onclick listener
+        location.setOnClickListener {
+            val intent=Intent(this,MainActivity::class.java)
+            startActivity(intent )
+        }
+
+
+
+
+
+        policeSiren.setOnClickListener {
             val intent = Intent(this, ScrollingActivity::class.java)
             // start your next activity
             startActivity(intent)
         }
+        //        first aid kit image button onclick
+        firstAidKit.setOnClickListener {
+            val intent = Intent(this,FirstAidActivity::class.java)
+            startActivity(intent)
+        }
 
-//         Photo mail onclick  listener
+
+
+
 
 
     }
