@@ -16,8 +16,7 @@ class Location : AppCompatActivity() {
         setContentView(R.layout.activity_location)
 
 
-
-        //        Hospital onclick listener
+        /* Hospital onclick listener */
         hospital.setOnClickListener(View.OnClickListener {
             Handler().postDelayed(Runnable {
                 val gmmIntentUri = Uri.parse("geo:0,0?q= "+"Hospital")

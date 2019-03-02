@@ -30,15 +30,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-//        Location onclick listener
-        location.setOnClickListener(View.OnClickListener {
-            Handler().postDelayed(Runnable {
-                val gmmIntentUri = Uri.parse("geo:0,0?q= "+"Hospital")
-                val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
-                mapIntent.setPackage("com.google.android.apps.maps")
-                startActivity(mapIntent)
-            }, 600)
-        })
+////        Location onclick listener
+//        location.setOnClickListener(View.OnClickListener {
+//            Handler().postDelayed(Runnable {
+//                val gmmIntentUri = Uri.parse("geo:0,0?q= "+"Hospital")
+//                val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+//                mapIntent.setPackage("com.google.android.apps.maps")
+//                startActivity(mapIntent)
+//            }, 600)
+//        })
 
 
 

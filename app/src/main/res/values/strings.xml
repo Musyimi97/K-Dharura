@@ -127,4 +127,7 @@
     <string name="first_aid_kit">First Aid Kit</string>
     <string name="police_siren">Police Siren</string>
     <string name="location">Location</string>
+    <string name="hospital">Hospital</string>
+    <string name="police_stations">Police Stations</string>
+    <string name="car_garage">Car Garage</string>
 </resources>
