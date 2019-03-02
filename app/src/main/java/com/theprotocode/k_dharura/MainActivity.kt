@@ -47,9 +47,19 @@ class MainActivity : AppCompatActivity() {
             // start your next activity
             startActivity(intent)
         }
+
+
+
         //        first aid kit image button onclick
         firstAidKit.setOnClickListener {
             val intent = Intent(this,FirstAidActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        //        Location image button onclick
+        location.setOnClickListener {
+            val intent = Intent(this,Location::class.java)
             startActivity(intent)
         }
 
