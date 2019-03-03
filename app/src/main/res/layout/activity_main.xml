@@ -40,7 +40,8 @@
                                 android:background="@android:color/white"
                                 android:layout_width="match_parent"
                                 android:layout_height="90dp" android:scaleType="centerInside"
-                                android:id="@+id/ambulance" android:contentDescription="@string/app_name"/>
+                                android:id="@+id/ambulance" android:contentDescription="@string/app_name"
+                                android:onClick="callNumber"/>
                         <TextView android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
                                   android:text="@string/Ambulance"
@@ -69,7 +70,8 @@
                                 android:background="@android:color/white"
                                 android:layout_width="match_parent"
                                 android:layout_height="90dp" android:scaleType="centerInside"
-                                android:id="@+id/police" android:contentDescription="@string/app_name"/>
+                                android:id="@+id/police" android:contentDescription="@string/app_name"
+                                android:onClick="callNumber"/>
                         <TextView android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
                                   android:text="@string/police"
@@ -99,7 +101,8 @@
                                 android:background="@android:color/white"
                                 android:layout_width="match_parent"
                                 android:layout_height="90dp" android:scaleType="centerInside"
-                                android:id="@+id/fire" android:contentDescription="@string/app_name"/>
+                                android:id="@+id/fire" android:contentDescription="@string/app_name"
+                                android:onClick="callNumber"/>
                         <TextView android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
                                   android:text="@string/fire"
@@ -131,16 +134,21 @@
                            android:layout_height="106dp"
                            android:src="@drawable/i_login"
 
-                />
+                           android:contentDescription="@string/app_name" android:id="@+id/healthIdentity"/>
+                <RelativeLayout
+                        android:layout_marginStart="100dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
                 <Button
                         android:background="@android:color/holo_blue_bright"
                         android:textColor="@android:color/white"
-                        android:layout_marginLeft="100dp"
                         android:layout_width="182dp"
                         android:layout_height="wrap_content"
-                        android:text="Edit Health ID"
-                        android:id="@+id/details"/>
+                        android:text="@string/edit_health_id"
+                        android:id="@+id/details" android:contentDescription="@string/app_name"/>
+                </RelativeLayout>
 
             </LinearLayout>
 
@@ -179,16 +187,17 @@
                                       android:orientation="vertical"
                         >
                             <ImageButton
-                                    android:src="@drawable/i_ambulance"
+                                    android:src="@drawable/i_accident"
                                     android:layout_marginTop="5dp"
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/ambulance1" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/carAccident" android:contentDescription="@string/app_name"
+                                    android:onClick="callNumber"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="@string/Ambulance"
-                                      android:id="@+id/ammbulanceText1" android:contentDescription="@string/app_name"
+                                      android:text="@string/road_accident"
+                                      android:id="@+id/accidentText" android:contentDescription="@string/app_name"
                                       android:textAlignment="center"/>
                         </LinearLayout>
 
@@ -208,16 +217,16 @@
                                       android:orientation="vertical"
                         >
                             <ImageButton
-                                    android:src="@drawable/i_police"
+                                    android:src="@drawable/i_tow2"
                                     android:layout_marginTop="5dp"
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/police1" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/towTruck" android:contentDescription="@string/app_name"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="@string/police"
-                                      android:id="@+id/policeText1" android:contentDescription="@string/app_name"
+                                      android:text="@string/string_car_breakdown"
+                                      android:id="@+id/towTuckText" android:contentDescription="@string/app_name"
                                       android:textAlignment="center"/>
                         </LinearLayout>
 
@@ -238,16 +247,18 @@
                         >
 
                             <ImageButton
-                                    android:src="@drawable/fire2"
+                                    android:src="@drawable/i_camera"
                                     android:layout_marginTop="5dp"
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/fire1" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/photoMail" android:contentDescription="@string/app_name"
+                                    android:onClick="takePicture"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="@string/fire"
-                                      android:textAlignment="center"/>
+                                      android:text="@string/photo_mail"
+                                      android:textAlignment="center" android:id="@+id/photoMailText"
+                                      android:contentDescription="@string/app_name"/>
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
@@ -278,16 +289,16 @@
                                       android:orientation="vertical"
                         >
                             <ImageButton
-                                    android:src="@drawable/i_ambulance"
+                                    android:src="@drawable/i_siren"
                                     android:layout_marginTop="5dp"
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/ambulance2" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/policeSiren" android:contentDescription="@string/app_name"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="@string/Ambulance"
-                                      android:id="@+id/ammbulanceText2" android:contentDescription="@string/app_name"
+                                      android:text="@string/police_siren"
+                                      android:id="@+id/policeSireText" android:contentDescription="@string/app_name"
                                       android:textAlignment="center"/>
                         </LinearLayout>
 
@@ -307,16 +318,16 @@
                                       android:orientation="vertical"
                         >
                             <ImageButton
-                                    android:src="@drawable/i_police"
+                                    android:src="@drawable/i_health2"
                                     android:layout_marginTop="5dp"
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/police2" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/firstAidKit" android:contentDescription="@string/app_name"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="@string/police"
-                                      android:id="@+id/policeText2" android:contentDescription="@string/app_name"
+                                      android:text="@string/first_aid_kit"
+                                      android:id="@+id/firstAidText" android:contentDescription="@string/app_name"
                                       android:textAlignment="center"/>
                         </LinearLayout>
 
@@ -337,16 +348,17 @@
                         >
 
                             <ImageButton
-                                    android:src="@drawable/fire2"
+                                    android:src="@drawable/ic_location_on_black_24dp"
                                     android:layout_marginTop="5dp"
                                     android:background="@android:color/white"
                                     android:layout_width="match_parent"
                                     android:layout_height="90dp" android:scaleType="centerInside"
-                                    android:id="@+id/fire2" android:contentDescription="@string/app_name"/>
+                                    android:id="@+id/location" android:contentDescription="@string/app_name"/>
                             <TextView android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:text="@string/fire"
-                                      android:textAlignment="center"/>
+                                      android:text="@string/location"
+                                      android:textAlignment="center" android:id="@+id/locationText"
+                                      android:contentDescription="@string/app_name"/>
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>

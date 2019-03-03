@@ -5,6 +5,8 @@
 
     <dist:module dist:instant="true"/>
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -12,6 +14,14 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+
+        <activity
+                android:name=".Location"
+                android:theme="@style/Theme.AppCompat.Light.Dialog"
+        >
+        </activity>
+        <activity android:name=".FirstAidActivity">
+        </activity>
         <activity
                 android:name=".ScrollingActivity"
                 android:label="@string/title_activity_scrolling"
@@ -19,7 +29,7 @@
         </activity>
         <activity
                 android:name=".MainActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
